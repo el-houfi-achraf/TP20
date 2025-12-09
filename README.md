@@ -47,64 +47,6 @@ Le tableau de bord Eureka affiche tous les services enregistrés dans l'architec
 
 *Dashboard Eureka montrant les services enregistrés (GATEWAY, SERVICE-CLIENT, SERVICE-CAR)*
 
----
-
-### Structure du Service Client
-
-Structure du projet client-service :
-
-![Client Service Structure](docs/client_service_structure.png)
-
-*Organisation du code du microservice Client*
-
----
-
-### Structure du Service Voiture
-
-Structure du projet car-service :
-
-![Car Service Structure](docs/car_service_structure.png)
-
-*Organisation du code du microservice Voiture avec RestTemplate*
-
----
-
-### API Client - Liste des Clients
-
-Réponse de l'API via la Gateway pour récupérer tous les clients :
-
-**URL:** `http://localhost:8888/SERVICE-CLIENT/api/client`
-
-![Client API Response](docs/client_api_response.png)
-
-*Réponse JSON contenant la liste des clients*
-
----
-
-### API Voiture - Liste des Voitures avec Détails Clients
-
-Réponse de l'API via la Gateway pour récupérer toutes les voitures avec les informations des clients propriétaires :
-
-**URL:** `http://localhost:8888/SERVICE-CAR/api/car`
-
-![Car API Response](docs/car_api_response.png)
-
-*Réponse JSON contenant les voitures avec les détails des clients (récupérés via RestTemplate)*
-
----
-
-### API Voiture - Détail d'une Voiture
-
-Réponse de l'API pour récupérer une voiture spécifique par son ID :
-
-**URL:** `http://localhost:8888/SERVICE-CAR/api/car/1`
-
-![Car By ID Response](docs/car_by_id_response.png)
-
-*Détail d'une voiture spécifique avec les informations du client associé*
-
----
-
 ## 📁 Structure des Services
 
 ### 1. Eureka Server (Port 8761)
